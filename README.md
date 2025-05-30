@@ -9,6 +9,7 @@ This repository provides information and guidelines to use the reconstructed tra
 5. [Method summary & data dictionary](#-Method-summary-and-data-dictionary)
 6. [Citation](#Citation)
 
+
 ## About SHRP2 NDS
 [SHRP2 NDS](https://highways.dot.gov/safety/data-analysis-tools/rsdp/rsdp-tools/strategic-highway-research-program-shrp2) is abbreviated from the Second Strategic Highway Research Program’s (SHRP2) Naturalistic Driving Study (NDS). It collected data with 3,300+ drivers' participation between 2010‑2013 across six U.S. states. The participants' personal vehicles were equipped with data acquisition systems that recorded video footage, vehicle network data (e.g., speed, brake, and accelerator positions), and signals from additional sensors such as forward radar and accelerometers. A unique asset of SHRP2 NDS is the **manually annotated safety‑critical events**, i.e., crashes and near‑crashes, along with safe baseline segments for parallel comparison. For a full technical description, see [^1].
 
@@ -26,7 +27,6 @@ This dataset contains reconstructed bird's eye view trajectories (in 10 fps) of 
 ## DUL application
 > **Typical duration:** 1 week ~ 1 month
 
-To access the data, 
 1. **Send a request to VTTI**  
    Email <datasharing@vtti.vt.edu> with
    - dataset title and URL https://doi.org/10.15787/VTT1/EFYEJR,
