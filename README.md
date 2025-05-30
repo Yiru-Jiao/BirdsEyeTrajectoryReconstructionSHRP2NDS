@@ -24,6 +24,8 @@ This repository provides information and guidelines to use the reconstructed tra
 
 This dataset contains reconstructed bird's eye view trajectories (in 10 fps) of 10,919 safe baseline trips and 8,111 trips involving safety-critical events (crashes and near-crashes). Among all the trips, 3,893 safe baseline trips have both the subject vehicle and at least one surrounding object reconstructed; and for safety-critical trips the number is 6,664, including 1,402 crashes and 5,262 near-crashes. The dataset is processed from two existing datasets that were derived from SHRP2 NDS [^2][^3].
 
+Out of responsibility and transparency, we have to remind here that the data quality of subject vehicles is much higher than that of the surrounding objects, and that the conflicting object in a safety-critical event was not always recorded. Therefore, the eventual number of useful crashes and near-crashes should be around 2.5k to 3k. 
+
 ## DUL application
 > **Typical duration:** 1 week ~ 1 month
 
