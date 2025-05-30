@@ -32,9 +32,9 @@ This dataset contains reconstructed bird's eye view trajectories (in 10 fps) of 
    - dataset title and URL https://doi.org/10.15787/VTT1/EFYEJR,
    - a short description of your research goals,
    - the name and affiliation of the principal investigator (if applicable).
-2. **Complete the DUL form**
+2. **Complete the DUL form**  
    VTTI will reply with an application form that covers data security, intended use, and authorised users. A single licence can cover a whole team.
-3. **Submit the signed documents**
+3. **Submit the signed documents**  
    Follow the submission instructions included in the form.
 4. **Await approval**  
    When the application is approved, you will receive personalised download credentials.
