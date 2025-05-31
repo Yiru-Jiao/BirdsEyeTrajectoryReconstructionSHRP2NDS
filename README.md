@@ -7,17 +7,18 @@ This repository provides information and guidelines to use the reconstructed tra
 </p>
 
 ### Quick navigation
-- [1. About the SHRP2 NDS](#About-SHRP2-NDS)
-- [2. What’s in the reconstructed dataset](#Reconstructed-data-overview)
-- [3. Summary of useful information](#Summary-of-useful-information)
-- [4. How to get a Data Use License](#DUL-application)
-- [5. Structure preview of the dataset](#Structure-preview-of-the-dataset)
-- [6. Method summary & data dictionary](#-Method-summary-and-data-dictionary)
-- [7. Citation](#Citation)
+- [1. About the SHRP2 NDS](#1-About-SHRP2-NDS)
+- [2. What’s in the reconstructed dataset](#2-Reconstructed-data-overview)
+- [3. Summary of useful information](#3-Summary-of-useful-information)
+- [4. How to get a Data Use License](#4-DUL-application)
+- [5. Structure preview of the dataset](#5-Structure-preview-of-the-dataset)
+- [6. Method summary & data dictionary](#6-Method-summary-and-data-dictionary)
+- [7. Citation](#7-Citation)
 - [References](#References)
 
 ### Important notes
-- [Note on perception data](#Note on perception data)
+- [Note on perception data](#2.2-Note-on-perception-data)
+- [Note on data quality](#2.4-Note-on-data-quality)
 
 
 ## 1 About SHRP2 NDS
