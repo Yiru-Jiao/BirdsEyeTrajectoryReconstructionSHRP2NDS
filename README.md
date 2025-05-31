@@ -29,31 +29,41 @@ Out of responsibility and transparency, we have to remind here that the data qua
 We show 3 examples of the reconstructed events below. Event 15396984 is a crash, while 116594166 and 133297581 are near-crashes. The subject vehicle is shown as a red rectangle and the surrounding objects are shown as colored circles, with light green history in the past 1 second.
 
 <div style="overflow-x:auto;">
-  <p>
-    <div style="
-          float:left;
-          width:65%;
-          text-align:center;
-        ">
-      <img src="gifs/Event15396984.gif"
-           alt="Event 15396984"
-           style="display:block; width:100%; height:auto; margin-bottom:8px;">
-      <img src="gifs/Event116594166.gif"
-           alt="Event 116594166"
-           style="display:block; width:100%; height:auto;">
-    </div>
-    <div style="
-          float:right;
-          width:35%;
-          text-align:center;
-        ">
-      <img src="gifs/Event133297581.gif"
-           alt="Event 133297581"
-           style="width:100%; height:auto; display:block;">
-    </div>
-    <div style="clear:both;"></div>
-  </p>
+  <!-- LEFT container: floats left, takes 65% of parent’s width -->
+  <div style="
+        float: left;
+        width: 65%;
+        text-align: center;
+      ">
+    <img
+      src="gifs/Event15396984.gif"
+      alt="Event 15396984"
+      style="display: block; width: 100%; height: auto; margin-bottom: 8px;"
+    >
+    <img
+      src="gifs/Event116594166.gif"
+      alt="Event 116594166"
+      style="display: block; width: 100%; height: auto;"
+    >
+  </div>
+
+  <!-- RIGHT container: floats right, takes 35% of parent’s width -->
+  <div style="
+        float: right;
+        width: 35%;
+        text-align: center;
+      ">
+    <img
+      src="gifs/Event133297581.gif"
+      alt="Event 133297581"
+      style="display: block; width: 100%; height: auto;"
+    >
+  </div>
+
+  <!-- Clear floats -->
+  <div style="clear: both;"></div>
 </div>
+
 
 
 
