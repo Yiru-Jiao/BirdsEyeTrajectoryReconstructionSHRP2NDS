@@ -73,21 +73,21 @@ Out of responsibility and transparency, we have to remind here that the data qua
 
 Below we provide a snapshot of what this dataset contains, just enough to let you decide whether you need to dive into the full data dictionary. 
 
-1. Subjct vehicle trajectories and signals
+1. Subjct vehicle trajectories and signals  
    For each subject (participant) vehicle,
    - original time-series states (speed, yaw rate, acceleration, brake/steer inputs, turn-signal status) and Kalman-filtered bird’s-eye trajectory (position, heading, speed, acceleration) at 10 Hz;
    - every record is tagged with an event_id (which links to crash/near-crash events) and precise timestamps (both raw ms and resampled seconds).
-2. Surrounding object trajectories
+2. Surrounding object trajectories  
    For each object that was detected by the forward radar, 
    - raw relative offsets/velocities (in the subject vehicle's local frame) and, after transforming to global coordinates and Kalman-filtered bird’s-eye trajectory (position, heading, speed) at 10 Hz;
    - each object carries a unique target id to track its path before, during, and after a safety-critical incident.
-3. Event metadata
+3. Event metadata  
    A compact table for all events, with
    - event category (e.g., crash, near-crash, safe baseline) and event type (e.g., leading, adjacent lane, merging, pedestrian, animal, etc);
    - vehicle dimensions (subject vehicle and primary/secondary objects);
    - key timestamps when a crash or near-crash starts, when impact or closest approach occurs, and when the driver first reacts (if applicable);
    - short narrative description, and a flag indicating whether enough object data (≥ 5 s) exists for analysis.
-4. Environment conditions
+4. Environment conditions  
    For each safe-critical event, environmental information are provided 
    - lighting (daylight, dusk, dark, etc.), 
    - weather (rain, fog, clear, etc.), 
