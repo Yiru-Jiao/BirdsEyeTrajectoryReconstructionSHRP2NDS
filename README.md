@@ -24,7 +24,25 @@ This repository provides information and guidelines to use the reconstructed tra
 
 This dataset contains reconstructed bird's eye view trajectories (in 10 fps) of 10,919 safe baseline trips and 8,111 trips involving safety-critical events (crashes and near-crashes). Among all the trips, 3,893 safe baseline trips have both the subject vehicle and at least one surrounding object reconstructed; and for safety-critical trips the number is 6,664, including 1,402 crashes and 5,262 near-crashes. The dataset is processed from two existing datasets that were derived from SHRP2 NDS [^2][^3].
 
-Out of responsibility and transparency, we have to remind here that the data quality of subject vehicles is much higher than that of the surrounding objects, and that the conflicting object in a safety-critical event was not always recorded. Therefore, the eventual number of useful crashes and near-crashes should be around 2.5k to 3k. 
+Out of responsibility and transparency, we have to remind here that the data quality of subject vehicles is much higher than that of the surrounding objects, and that the conflicting object in a safety-critical event was not always recorded. Therefore, the eventual number of useful crashes and near-crashes should be around 2.5k to 3k.
+
+We show 3 examples of the reconstructed events below. Event 15396984 is a crash, while 116594166 and 133297581 are near-crashes. The subject vehicle is shown as a red rectangle and the surrounding objects are shown as colored circles, with light green history in the past 1 second.
+
+<table width="100%">
+  <tr>
+    <!-- Left cell: 40% of the table’s width -->
+    <td width="65%" align="center" valign="top">
+      <!-- Each GIF fills 100% of the cell’s width -->
+      <img src="gifs/Event15396984.gif" alt="GIF 1" style="width:100%; height:auto;"><br>
+      <img src="gifs/Event116594166.gif" alt="GIF 2" style="width:100%; height:auto;">
+    </td>
+    <!-- Right cell: 60% of the table’s width -->
+    <td width="35%" align="center" valign="top">
+      <img src="gifs/Event133297581.gif" alt="GIF 3" style="width:100%; height:auto;">
+    </td>
+  </tr>
+</table>
+
 
 ## DUL application
 > **Typical duration:** 1 week ~ 1 month
