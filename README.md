@@ -17,8 +17,8 @@ This repository provides information and guidelines to use the reconstructed tra
 - [References](#References)
 
 ### Important notes
-- [Note on perception data](#2.2-Note-on-perception-data)
-- [Note on data quality](#2.4-Note-on-data-quality)
+- [Note on perception data](##2.2-Note-on-perception-data)
+- [Note on data quality](##2.4-Note-on-data-quality)
 
 
 ## 1 About SHRP2 NDS
