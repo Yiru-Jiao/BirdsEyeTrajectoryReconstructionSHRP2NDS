@@ -13,7 +13,7 @@ This repository provides information and guidelines to use the reconstructed tra
 - [4. How to get a Data Use License](#4-DUL-application)
 - [5. Structure preview of the dataset](#5-Structure-preview-of-the-dataset)
 - [6. Method summary & data dictionary](#6-Method-summary-and-data-dictionary)
-- [7. Citation](#7-Citation)
+- [7. Suggested citation and disclaimer](#7-Suggested-citation-and-disclaimer)
 - [References](#References)
 
 ### Important notes
@@ -131,8 +131,8 @@ where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of
 ## 6 Method summary and data dictionary
 We provide [`MethodExplanation.pdf`](MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](OverallDataDictionary.pdf) in this repository to know more details about this dataset.
 
-## 7 Citation
-If you find this dataset useful, please kindly cite us.
+## 7 Suggested citation and disclaimer
+If you find this dataset useful, please kindly cite us:
 ```bibtex
 @report{jiao2025shrpcrash,
 author = {Jiao, Yiru and Calvert, Simeon},
@@ -143,6 +143,8 @@ version = {V1},
 doi = {10.15787/VTT1/EFYEJR},
 }
 ```
+In addition, a disclaimer below is recommended to be included in your Acknowledgements according to the DUL you will obtain:
+> This study used data from a derived set of the SHRP2 Naturalistic Driving Study, ``Bird's eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS'' (doi: 10.15787/VTT1/EFYEJR). The data are accessed under the SHRP2 Data Use License \[your DUL number\], issued by the Virginia Tech Transportation Institute (VTTI). The findings and conclusions presented here are those of the authors and do not necessarily represent the views of VTTI, the Transportation Research Board, the National Academies, or the Federal Highway Administration.
 
 ## References
 [^1]: J. M. Hankey, M. A. Perez, and J. A. McClafferty. Description of the SHRP 2 Naturalistic Database and the Crash, Near-Crash, and Baseline Data Sets. Tech. rep. Virginia Tech Transportation Institute, 2016.
