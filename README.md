@@ -1,9 +1,12 @@
 # BirdsEyeTrajectoryReconstructionSHRP2NDS
 This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. The dataset itself is published by the Virginia Tech Transportation Institute (VITTI) at [https://doi.org/10.15787/VTT1/EFYEJR]. To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL) since some original data are included in the processed dataset. Below you will find a concise overview of the dataset, a step‑by‑step DUL application guide, a structure description of the dataset, and pointers to method and documentation.
 
+### Discussions open to everyone
+We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions) for this repository, where you are welcome to ask questions, share insights, and discuss the application and use of this dataset. We encourage everyone to participate in the discussions, as it helps foster a collaborative environment for learning and improvement.
+
 ### Event statistics
 <p align="center">
-  <img src="EventStatistics.png" alt="Event counts and distribution" width="100%" height="100%"/>
+  <img src="assets/EventStatistics.png" alt="Event counts and distribution" width="100%" height="100%"/>
 </p>
 
 ### Quick navigation
@@ -43,16 +46,16 @@ We show 3 examples of the reconstructed events below. Event 15396984 is a crash,
   <tr>
     <!-- Left = 65% -->
     <td width="65%" align="center" valign="top">
-      <img src="gifs/Event15396984.gif"
+      <img src="assets/gifs/Event15396984.gif"
            alt="Event 15396984"
            style="display:block; width:100%; height:auto; margin-bottom:8px;">
-      <img src="gifs/Event116594166.gif"
+      <img src="assets/gifs/Event116594166.gif"
            alt="Event 116594166"
            style="display:block; width:100%; height:auto;">
     </td>
     <!-- Right = 35% -->
     <td width="35%" align="center" valign="middle">
-      <img src="gifs/Event133297581.gif"
+      <img src="assets/gifs/Event133297581.gif"
            alt="Event 133297581"
            style="display:block; width:100%; height:auto;">
     </td>
@@ -94,7 +97,7 @@ Below we provide a snapshot of what this dataset contains, just enough to let yo
    - road-surface state (dry, wet, icy, etc.), 
    - and traffic density (levels A1–F). 
 
-*For more detailed information, please feel free to explore the [full data dictionary](OverallDataDictionary.pdf) for exact variable names and formats.*
+*For more detailed information, please feel free to explore the [full data dictionary](pdfs/OverallDataDictionary.pdf) for exact variable names and formats.*
 
 
 ## DUL application
@@ -127,7 +130,7 @@ The folder structure of the dataset you will access is as follows:
 where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of all the trips, and `SafetyCriticalTestSet.zip` contains the safety-critical test set. Within each of the zipped files, the folder structure and more detailed documentation are provided in the `readme_data_structure.md` file. The `MethodExplanation.pdf` describes the methods used to process these data. The `OverallDataDictionary.pdf` summarises a complete data dictionary for the entire dataset.
 
 ## Method summary and data dictionary
-In this repository, we also provide the [`MethodExplanation.pdf`](MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](OverallDataDictionary.pdf).
+In this repository under the folder `pdfs`, we also provide the [`MethodExplanation.pdf`](pdfs/MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](pdfs/OverallDataDictionary.pdf).
 
 ## Citation
 ```bibtex
