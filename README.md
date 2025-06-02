@@ -1,5 +1,5 @@
 # BirdsEyeTrajectoryReconstructionSHRP2NDS
-This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. The dataset itself is published by the Virginia Tech Transportation Institute (VITTI) at [https://doi.org/10.15787/VTT1/EFYEJR]. To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL) since some original data are included in the processed dataset. Below you will find a concise overview of the dataset, a step‑by‑step DUL application guide, a structure description of the dataset, and pointers to method and documentation.
+This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. The dataset itself is published by the Virginia Tech Transportation Institute (VITTI) at https://doi.org/10.15787/VTT1/EFYEJR. To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL) since part of the original data is included in the processed dataset. Below you will find a concise overview of the dataset, a step‑by‑step DUL application guide, a structure description of the dataset, and pointers to the reconstruction method and data dictionary.
 
 ### Discussions open to everyone
 We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions) for this repository, where you are welcome to ask questions, share insights, and discuss the application and use of this dataset. We encourage everyone to participate in the discussions, as it helps foster a collaborative environment for learning and improvement.
@@ -10,21 +10,26 @@ We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryRe
 </p>
 
 ### Quick navigation
-- [About the SHRP2 NDS](#About-SHRP2-NDS)
-- [What’s in the reconstructed dataset](#Reconstructed-data-overview)
-- [Summary of useful information](#Summary-of-useful-information)
-- [How to get a Data Use License](#DUL-application)
-- [Structure preview of the dataset](#Structure-preview-of-the-dataset)
-- [Method summary & data dictionary](#-Method-summary-and-data-dictionary)
-- [Citation](#Citation)
+- [1. About the SHRP2 NDS](#1-About-SHRP2-NDS)
+- [2. What’s in the reconstructed dataset](#2-Reconstructed-data-overview)
+- [3. Summary of useful information](#3-Summary-of-useful-information)
+- [4. How to get a Data Use License](#4-DUL-application)
+- [5. Structure preview of the dataset](#5-Structure-preview-of-the-dataset)
+- [6. Method summary & data dictionary](#6-Method-summary-and-data-dictionary)
+- [7. Suggested citation and disclaimer](#7-Suggested-citation-and-disclaimer)
+- [References](#References)
+
+### Important notes
+- [Note on perception data](#22-note-on-perception-data)
+- [Note on data quality](#24-Note-on-data-quality)
 
 
-## About SHRP2 NDS
-[SHRP2 NDS](https://highways.dot.gov/safety/data-analysis-tools/rsdp/rsdp-tools/strategic-highway-research-program-shrp2) is abbreviated from the Second Strategic Highway Research Program’s (SHRP2) Naturalistic Driving Study (NDS). It collected data with 3,300+ drivers' participation between 2010‑2013 across six U.S. states. The participants' personal vehicles were equipped with data acquisition systems that recorded video footage, vehicle network data (e.g., speed, brake, and accelerator positions), and signals from additional sensors such as forward radar and accelerometers. A unique asset of SHRP2 NDS is the **manually annotated safety‑critical events**, i.e., crashes and near‑crashes, along with safe baseline segments for parallel comparison. For a full technical description, see [^1].
+## 1 About SHRP2 NDS
+[SHRP2 NDS](https://highways.dot.gov/safety/data-analysis-tools/rsdp/rsdp-tools/strategic-highway-research-program-shrp2) is abbreviated from the Second Strategic Highway Research Program’s (SHRP2) Naturalistic Driving Study (NDS). It collected data with 3,300+ drivers' participation between 2010 and 2013 across six U.S. states. The participants' personal vehicles were equipped with data acquisition systems that recorded video footage, vehicle network data (e.g., speed, brake, and accelerator positions), and signals from additional sensors such as forward radar and accelerometers. A unique asset of SHRP2 NDS is the **manually annotated safety‑critical events**, i.e., crashes and near‑crashes, along with safe baseline segments for parallel comparison. For a full technical description of SHRP2 NDS, see [^1].
 
-## Reconstructed data overview
+## 2 Reconstructed data overview
 
-### Number of events
+### 2.1 Number of events
 |        Number of events       | Originally recorded | Subject-vehicle reconstructed | Both subject and object reconstructed |
 |------------------------------|------:|--------------------------:|---------------------:|
 | **Safe baselines**           | 32,509 | 10,919 | 3,893 |
@@ -32,15 +37,13 @@ We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryRe
 | &nbsp;&nbsp;-**Crashes**     | 1,942 | 1,807 | 1,042 |
 | &nbsp;&nbsp;-**Near-crashes**| 6,953 | 6,304 | 5,262 |
 
-This dataset contains reconstructed bird's eye view trajectories (in 10 fps) of 10,919 safe baseline trips and 8,111 trips involving safety-critical events (crashes and near-crashes). Among all the trips, 3,893 safe baseline trips have both the subject vehicle and at least one surrounding object reconstructed; and for safety-critical trips the number is 6,664, including 1,402 crashes and 5,262 near-crashes. The dataset is processed from two existing datasets that were derived from SHRP2 NDS [^2][^3].
+This dataset contains reconstructed bird's eye view trajectories (at 10 fps) of 10,919 safe baseline trips and 8,111 trips involving safety-critical events (crashes and near-crashes). Among all the trips, 3,893 safe baseline trips have both the subject vehicle and at least one surrounding object reconstructed; and for safety-critical trips the number is 6,664, including 1,402 crashes and 5,262 near-crashes. The dataset is processed from two existing datasets that were derived from SHRP2 NDS [^2][^3].
 
+### 2.2 Note on perception data
+We would like to note that this dataset mainly contains Bird's Eye View (BEV) trajectories along with event information, and *perception data such as video footage are not included*. In case you are interested in perception data, please also apply for DULs of the basis datasets that this current dataset is built upon, i.e., [^2] and [^3].
 
-### Reminder on perception data
-We would like to note that this dataset contains processed Bird's Eye View (BEV) trajectories only, and thus does not include perception data such as video footage or sensor signals. In case you are interested in perception data, please apply for DULs of the basis dataverses that this current dataset is built upon, i.e., [^2] and [^3].
-
-
-### Example events
-We show 3 examples of the reconstructed events below. Event 15396984 is a crash, while 116594166 and 133297581 are near-crashes. The subject vehicle is shown as a red rectangle and the surrounding objects are shown as colored circles, with light green history in the past 1 second.
+### 2.3 Example events
+We show 3 examples of the reconstructed events below. Event 15396984 is a crash, while 116594166 and 133297581 are near-crashes. The subject vehicle is marked as a red rectangle and the surrounding objects are shown as coloured circles, all with light green historical trajectories in the past 1 second.
 
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
@@ -62,21 +65,20 @@ We show 3 examples of the reconstructed events below. Event 15396984 is a crash,
   </tr>
 </table>
 
-### Reminder on data quality
-Out of responsibility and transparency, we have to remind here that the data quality of subject vehicles is much higher than that of the surrounding objects, and that the conflicting object in a safety-critical event was not always recorded. Therefore, the eventual number of useful crashes and near-crashes should be around 2.5k to 3k.
+### 2.4 Note on data quality
+Out of responsibility and transparency, we note here that the *data quality of subject vehicles is much higher than that of the surrounding objects*, and that *the conflicting object in a safety-critical event was not always recorded*. Therefore, the eventual number of useful crashes and near-crashes should be around 2.5k to 3k, depending on your filtering method.
 
-
-## Summary of useful information
+## 3 Summary of useful information
 
 **To help you decide quickly**
-- **Driving behavior or vehicle dynamics research?** You have raw brake/steer/acceleration signals plus a 10 Hz smoothed trajectory of the subject vehicle in various interaction situations.
+- **Driving behaviour or vehicle dynamics research?** You have raw brake/steer/acceleration signals plus 10 Hz smoothed trajectories of the subject vehicles in various interaction situations.
 - **Collision risk or interaction studies?** You have detected objects around the subject vehicle, with 10 Hz global trajectories, all tied to the same clock.
 - **Looking for certain events (crash vs. near-crash, under specific lighting/weather)?** The metadata table tells you what kind of incident each event was, how severe, when and how the driver reacted, plus lighting/weather/road-surface conditions.
-- **Linking to other SHRP2 datasets**? Every record matches the original SHRP2 crash/near-crash hierarchy by event id.
+- **Linking to other SHRP2 datasets**? Every record matches the original SHRP2 crash/near-crash hierarchy by event ID.
 
-Below we provide a snapshot of what this dataset contains, just enough to let you decide whether you need to dive into the full data dictionary. 
+Below we provide a snapshot of what this dataset contains, just enough to let you decide whether to dive into the full data dictionary. 
 
-1. **Subjct vehicle trajectories and signals**  
+1. **Subject vehicle trajectories and signals**  
    For each subject (participant) vehicle,
    - original time-series states (speed, yaw rate, acceleration, brake/steer inputs, turn-signal status) and Kalman-filtered bird’s-eye trajectory (position, heading, speed, acceleration) at 10 Hz;
    - every record is tagged with an event_id (which links to crash/near-crash events) and precise timestamps (both raw ms and resampled seconds).
@@ -91,16 +93,16 @@ Below we provide a snapshot of what this dataset contains, just enough to let yo
    - key timestamps when a crash or near-crash starts, when impact or closest approach occurs, and when the driver first reacts (if applicable);
    - short narrative description, and a flag indicating whether enough object data (≥ 5 s) exists for analysis.
 4. **Environment conditions**  
-   For each safe-critical event, environmental information are provided 
+   For each safe-critical event, environmental information is provided 
    - lighting (daylight, dusk, dark, etc.), 
    - weather (rain, fog, clear, etc.), 
    - road-surface state (dry, wet, icy, etc.), 
    - and traffic density (levels A1–F). 
 
-*For more detailed information, please feel free to explore the [full data dictionary](pdfs/OverallDataDictionary.pdf) for exact variable names and formats.*
+For more detailed information, please feel free to explore the [full data dictionary](pdfs/OverallDataDictionary.pdf) for exact variable names and formats.
 
 
-## DUL application
+## 4 DUL application
 > **Typical duration:** 1 week ~ 1 month
 
 1. **Send a request to VTTI**  
@@ -117,7 +119,7 @@ Below we provide a snapshot of what this dataset contains, just enough to let yo
 5. **Download and store the files**  
    Log in, grab the archives, and store them in accordance with your DUL.
 
-## Structure preview of the dataset
+## 5 Structure preview of the dataset
 The folder structure of the dataset you will access is as follows:
 ```
 ----- Parent folder
@@ -129,10 +131,11 @@ The folder structure of the dataset you will access is as follows:
 ```
 where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of all the trips, and `SafetyCriticalTestSet.zip` contains the safety-critical test set. Within each of the zipped files, the folder structure and more detailed documentation are provided in the `readme_data_structure.md` file. The `MethodExplanation.pdf` describes the methods used to process these data. The `OverallDataDictionary.pdf` summarises a complete data dictionary for the entire dataset.
 
-## Method summary and data dictionary
-In this repository under the folder `pdfs`, we also provide the [`MethodExplanation.pdf`](pdfs/MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](pdfs/OverallDataDictionary.pdf).
+## 6 Method summary and data dictionary
+We provide [`MethodExplanation.pdf`](MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](OverallDataDictionary.pdf) in this repository to know more details about this dataset.
 
-## Citation
+## 7 Suggested citation and disclaimer
+If you find this dataset useful, please kindly cite us:
 ```bibtex
 @report{jiao2025shrpcrash,
 author = {Jiao, Yiru and Calvert, Simeon},
@@ -143,6 +146,8 @@ version = {V1},
 doi = {10.15787/VTT1/EFYEJR},
 }
 ```
+In addition, a disclaimer below is recommended to be included in your Acknowledgements according to the DUL you will obtain:
+> This study used data from a derived set of the SHRP2 Naturalistic Driving Study, ``Bird's eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS'' (doi: 10.15787/VTT1/EFYEJR). The data are accessed under the SHRP2 Data Use License \[your DUL number\], issued by the Virginia Tech Transportation Institute (VTTI). The findings and conclusions presented here are those of the authors and do not necessarily represent the views of VTTI, the Transportation Research Board, the National Academies, or the Federal Highway Administration.
 
 ## References
 [^1]: J. M. Hankey, M. A. Perez, and J. A. McClafferty. Description of the SHRP 2 Naturalistic Database and the Crash, Near-Crash, and Baseline Data Sets. Tech. rep. Virginia Tech Transportation Institute, 2016.
