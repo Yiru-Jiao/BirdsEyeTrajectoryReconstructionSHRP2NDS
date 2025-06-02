@@ -132,7 +132,7 @@ The folder structure of the dataset you will access is as follows:
 where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of all the trips, and `SafetyCriticalTestSet.zip` contains the safety-critical test set. Within each of the zipped files, the folder structure and more detailed documentation are provided in the `readme_data_structure.md` file. The `MethodExplanation.pdf` describes the methods used to process these data. The `OverallDataDictionary.pdf` summarises a complete data dictionary for the entire dataset.
 
 ## 6 Method summary and data dictionary
-We provide [`MethodExplanation.pdf`](MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](OverallDataDictionary.pdf) in this repository to know more details about this dataset.
+In this repository under the folder `./pdfs/`, we provide [`MethodExplanation.pdf`](pdfs/MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](pdfs/OverallDataDictionary.pdf) to know more details about this dataset.
 
 ## 7 Suggested citation and disclaimer
 If you find this dataset useful, please kindly cite us:
@@ -147,7 +147,7 @@ doi = {10.15787/VTT1/EFYEJR},
 }
 ```
 In addition, a disclaimer below is recommended to be included in your Acknowledgements according to the DUL you will obtain:
-> This study used data from a derived set of the SHRP2 Naturalistic Driving Study, ``Bird's eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS'' (doi: 10.15787/VTT1/EFYEJR). The data are accessed under the SHRP2 Data Use License \[your DUL number\], issued by the Virginia Tech Transportation Institute (VTTI). The findings and conclusions presented here are those of the authors and do not necessarily represent the views of VTTI, the Transportation Research Board, the National Academies, or the Federal Highway Administration.
+> This study used data from a derived set of the SHRP2 Naturalistic Driving Study, ``Bird's eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS'' (doi: 10.15787/VTT1/EFYEJR). The data are accessed under the SHRP2 Data Use License `your DUL number`, issued by the Virginia Tech Transportation Institute (VTTI). The findings and conclusions presented here are those of the authors and do not necessarily represent the views of VTTI, the Transportation Research Board, the National Academies, or the Federal Highway Administration.
 
 ## References
 [^1]: J. M. Hankey, M. A. Perez, and J. A. McClafferty. Description of the SHRP 2 Naturalistic Database and the Crash, Near-Crash, and Baseline Data Sets. Tech. rep. Virginia Tech Transportation Institute, 2016.
