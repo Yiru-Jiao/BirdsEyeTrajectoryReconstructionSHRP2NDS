@@ -4,6 +4,8 @@ This repository provides information and guidelines to use the reconstructed tra
 ### Discussions open to everyone
 We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions) for this repository, where you are welcome to ask questions, share insights, and discuss the application and use of this dataset. We encourage everyone to participate in the discussions, as it helps foster a collaborative environment for learning and improvement.
 
+You are invited to vote on a [poll about your application experience](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions/4). This is to better know about the procedure and help everyone in the community get fair use of the data.
+
 ### Event statistics
 <p align="center">
   <img src="assets/EventStatistics.png" alt="Event counts and distribution" width="100%" height="100%"/>
