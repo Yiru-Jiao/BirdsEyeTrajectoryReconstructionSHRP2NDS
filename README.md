@@ -1,11 +1,12 @@
 # BirdsEyeTrajectoryReconstructionSHRP2NDS
-This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. 
+This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. The current README provides a concise overview of the dataset, a step‑by‑step DUL application guide (when necessary), a structure description of the dataset, and pointers to the reconstruction method and data dictionaries.
 
 There are two options to access the dataset, both provided by the Virginia Tech Transportation Institute (VTTI).
-1. A public dataset free to be downloaded is going to be published soon (expected to be by the end of this week), where the raw data from SHRP2 NDS are removed while the derived data remain.
+1. A public dataset free to be downloaded at https://doi.org/10.15787/VTT1/T7UUC1, where the raw data from SHRP2 NDS are removed while the derived data remain. At this moment, the `.zip` file lacks a folder named "SafeBaseline" of the reconstructed trajectories of safe events. VTTI is fixing this problem, and the fixed dataset is expected to be available shortly.
 2. The complete dataset is published at https://doi.org/10.15787/VTT1/EFYEJR. __To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL)__ since the raw data from SHRP2 NDS are included.
 
-This current page provides a concise overview of the dataset, a step‑by‑step DUL application guide, a structure description of the dataset, and pointers to the reconstruction method and data dictionary.
+The detailed difference between these two versions can be compared via their corresponding data dictionaries: [public version](pdfs/OverallDataDictionary_PublicVersion.pdf); [complete version](pdfs/OverallDataDictionary.pdf).
+
 
 ### Discussions open to everyone
 We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions) for this repository, where you are welcome to ask questions, share insights, and discuss the application and use of this dataset. We encourage everyone to participate in the discussions, as it helps foster a collaborative environment for learning and improvement.
@@ -99,7 +100,7 @@ Below we provide a snapshot of what this dataset contains, just enough to let yo
    - vehicle dimensions (subject vehicle and primary/secondary objects);
    - key timestamps when a crash or near-crash starts, when impact or closest approach occurs, and when the driver first reacts (if applicable);
    - short narrative description, and a flag indicating whether enough object data (≥ 5 s) exists for analysis.
-4. **Environment conditions**  
+4. **Environment conditions (available in the complete version only)**  
    For each safe-critical event, environmental information is provided 
    - lighting (daylight, dusk, dark, etc.), 
    - weather (rain, fog, clear, etc.), 
@@ -110,7 +111,7 @@ For more detailed information, please feel free to explore the [full data dictio
 
 
 ## 4 DUL application
-> **Typical duration:** 1 week ~ 1 month
+> **Typical duration:** 1 week ~ 1 month, depending on whether your institution is based in the U.S. and other potentially relevant context.
 
 1. **Send a request to VTTI**  
    Email <datasharing@vtti.vt.edu> with
@@ -127,7 +128,7 @@ For more detailed information, please feel free to explore the [full data dictio
    Log in, grab the archives, and store them in accordance with your DUL.
 
 ## 5 Structure preview of the dataset
-The folder structure of the dataset you will access is as follows:
+The folder structure of the complete version you will access is like
 ```
 ----- Parent folder
   |-- readme.md (this file)
@@ -136,20 +137,42 @@ The folder structure of the dataset you will access is as follows:
   |-- MethodExplanation.pdf
   |-- OverallDataDictionary.pdf
 ```
-where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of all the trips, and `SafetyCriticalTestSet.zip` contains the safety-critical test set. Within each of the zipped files, the folder structure and more detailed documentation are provided in the `readme_data_structure.md` file. The `MethodExplanation.pdf` describes the methods used to process these data. The `OverallDataDictionary.pdf` summarises a complete data dictionary for the entire dataset.
+and of the public version you will access is like
+```
+Free to download directly at https://doi.org/10.15787/VTT1/T7UUC1
+----- OverallDataDictionary_T7UUC1.pdf
+----- T7UUC1_Bird'sEyeView_Dataset.zip
+  |-- ReconstructedTrajectories.zip
+  |-- SafetyCriticalTestSet.zip
+```
+where `ReconstructedTrajectories.zip` contains the reconstructed trajectories of all the trips, and `SafetyCriticalTestSet.zip` contains the safety-critical test set. Within each of the zipped files. The `MethodExplanation.pdf` describes the methods used to process these data.
 
 ## 6 Method summary and data dictionary
-In this repository under the folder `./pdfs/`, we provide [`MethodExplanation.pdf`](pdfs/MethodExplanation.pdf) and [`OverallDataDictionary.pdf`](pdfs/OverallDataDictionary.pdf) to know more details about this dataset.
+In this repository under the folder `./pdfs/`, we provide [`MethodExplanation.pdf`](pdfs/MethodExplanation.pdf), [`OverallDataDictionary_PublicVersion.pdf`](pdfs/OverallDataDictionary_PublicVersion.pdf) and [`OverallDataDictionary.pdf`](pdfs/OverallDataDictionary.pdf) to know more details about this dataset.
 
 ## 7 Suggested citation and disclaimer
 If you find this dataset useful, please kindly cite us:
+
+### For the public version:
+
+```bibtex
+@report{jiao2026shrpcrash,
+author = {Jiao, Yiru and Calvert, Simeon and Costa, Rufina},
+publisher = {VTTI},
+title = {Bird’s eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS (Public Version)},
+year = {2026},
+doi = {10.15787/VTT1/T7UUC1},
+}
+```
+
+### For the complete version:
+
 ```bibtex
 @report{jiao2025shrpcrash,
 author = {Jiao, Yiru and Calvert, Simeon},
 publisher = {VTTI},
 title = {Bird’s eye view trajectory reconstruction of naturalistic crashes and near-crashes in the SHRP2 NDS},
 year = {2025},
-version = {V1},
 doi = {10.15787/VTT1/EFYEJR},
 }
 ```
