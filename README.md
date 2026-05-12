@@ -3,11 +3,11 @@ This repository provides information and guidelines to use the reconstructed tra
 
 There are two options to access the dataset, both provided by the Virginia Tech Transportation Institute (VTTI).
 1. A public dataset free to be downloaded at https://doi.org/10.15787/VTT1/T7UUC1, where the raw data from SHRP2 NDS are removed while the derived data remain.
-   **Note:** If the DOI link shows ``Service temporarily unavailable'', first try opening the final Dataverse URL (https://dataverse.vtti.vt.edu/dataset.xhtml?persistentId=doi:10.15787/VTT1/T7UUC1) in Chrome Incognito mode. If that still fails, please download the dataset via the Dataverse Data Access API following [the guide](API_downloading_commands.md).
 2. The complete dataset is published at https://doi.org/10.15787/VTT1/EFYEJR. __To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL)__ since the raw data from SHRP2 NDS are included.
 
 The detailed difference between these two versions can be compared via their corresponding data dictionaries: [public version](pdfs/OverallDataDictionary_PublicVersion.pdf); [complete version](pdfs/OverallDataDictionary.pdf).
 
+**Note:** If the DOI link shows ``Service temporarily unavailable'', first try opening the final Dataverse URL (https://dataverse.vtti.vt.edu/dataset.xhtml?persistentId=doi:10.15787/VTT1/T7UUC1) in Chrome Incognito mode. If that still fails, please download the dataset via the Dataverse Data Access API following [the guide](API_downloading_commands.md).
 
 ### Discussions open to everyone
 We enable [GitHub Discussions](https://github.com/Yiru-Jiao/BirdsEyeTrajectoryReconstructionSHRP2NDS/discussions) for this repository, where you are welcome to ask questions, share insights, and discuss the application and use of this dataset. We encourage everyone to participate in the discussions, as it helps foster a collaborative environment for learning and improvement.
