@@ -2,7 +2,8 @@
 This repository provides information and guidelines to use the reconstructed trajectories of naturalistic crashes and near-crashes in the SHRP2 NDS. The current README provides a concise overview of the dataset, a step‑by‑step DUL application guide (when necessary), a structure description of the dataset, and pointers to the reconstruction method and data dictionaries.
 
 There are two options to access the dataset, both provided by the Virginia Tech Transportation Institute (VTTI).
-1. A public dataset free to be downloaded at https://doi.org/10.15787/VTT1/T7UUC1, where the raw data from SHRP2 NDS are removed while the derived data remain. At this moment, the `.zip` file lacks a folder named "SafeBaseline" of the reconstructed trajectories of safe events. VTTI is fixing this problem, and the fixed dataset is expected to be available shortly.
+1. A public dataset free to be downloaded at https://doi.org/10.15787/VTT1/T7UUC1, where the raw data from SHRP2 NDS are removed while the derived data remain.
+   **Note:** If the DOI link shows ``Service temporarily unavailable'', first try opening the final Dataverse URL (https://dataverse.vtti.vt.edu/dataset.xhtml?persistentId=doi:10.15787/VTT1/T7UUC1) in Chrome Incognito mode. If that still fails, please download the dataset via the Dataverse Data Access API following [the guide](API_downloading_commands.md).
 2. The complete dataset is published at https://doi.org/10.15787/VTT1/EFYEJR. __To legally use the data, one is required to obtain a SHRP2 Data Use License (DUL)__ since the raw data from SHRP2 NDS are included.
 
 The detailed difference between these two versions can be compared via their corresponding data dictionaries: [public version](pdfs/OverallDataDictionary_PublicVersion.pdf); [complete version](pdfs/OverallDataDictionary.pdf).
